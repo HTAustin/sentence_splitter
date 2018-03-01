@@ -20,7 +20,7 @@ for root, dirnames, filenames in os.walk(folder):
         for sentence in tokenizer.tokenize(data):
             sentence= sentence.strip()
             # Remove tags <>
-            if sentence[0] == '<' and sentence[-1] == '>'
+            if sentence[0] == '<' and sentence[-1] == '>':
                 continue
             diretory = str(sentTotalCnt/10000).zfill(5)
             pathname = output+'/'+diretory+'/'+filename+'.'+str(count)
